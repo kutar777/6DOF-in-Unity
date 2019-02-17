@@ -33,7 +33,7 @@ public class ARSessionOriginController : MonoBehaviour
         {
             text3.text = m_Origin.camera.transform.position.ToString("G2");
             text4.text = m_Origin.camera.transform.rotation.ToString("G2");
-            text5.text = m_Origin.camera.isActiveAndEnabled.ToString();
+            //text5.text = m_Origin.camera.isActiveAndEnabled.ToString();
         }
 
         if (Input.GetMouseButtonDown(0))
