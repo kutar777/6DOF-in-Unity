@@ -48,6 +48,32 @@ public class VRRaycast : MonoBehaviour
         transform.LookAt(Camera.main.transform.position);
         transform.Rotate(0.0f, 180.0f, 0.0f);
         transform.localScale = originalScale * distance;
+        
+        /*
+        RaycastHit hit;
+        ;
+        float distance;
+
+        if (Physics.Raycast (new Ray (Camera.main.transform.position, Camera.main.transform.forward, out hit))
+        {
+            distance = hit.distance;
+        }
+        else
+        {
+            distance = Camera.main.farClipPlane * 0.95f;
+        }
+        transform.position = Camera.main.transform.position +
+            Camera.main.transform.rotation * Vector3.forward * distance;
+        transform.LookAt(Camera.main.transform.position);
+        transform.Rotate(0.0f, 180.0f, 0.0f);
+        if(distance < 10.0f)
+        {
+            distance *= 1 + 5 * Mathf.Exp(-distance);
+        }
+        
+        transform.localScale = originalScale * distance;
+        
+        */
 
 
     }
